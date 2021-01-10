@@ -31,7 +31,8 @@ namespace CovidStats.AccessData
 
         public Bundesland Bundesland { get; set; }
 
-        public Cases Cases { get; set; }
+        [JsonIgnore]
+        public List<Cases> Cases { get; set; }
     }
 
     public class Cases
